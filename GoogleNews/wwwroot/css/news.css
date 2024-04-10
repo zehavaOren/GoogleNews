@@ -1,0 +1,61 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#mainTitle {
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Left and right columns width */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.headline-list {
+    /* Left column styles */
+}
+
+.post-content {
+    /* Right column styles */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    ul li {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+        ul li:hover {
+            color: mediumvioletred; /* Change color on hover */
+        }
+
+#postTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.error-message {
+    background-color: #ffcccc; /* Red background */
+    color: #cc0000; /* Red text color */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Hide initially */
+}
+
+.selected {
+    background-color: yellow; /* Yellow background color for selected link */
+}
+#title {
+    font-weight: bold;
+    font-size: 20px;
+}

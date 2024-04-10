@@ -1,0 +1,38 @@
+﻿@model IEnumerable<GoogleNewsApp.Models.NewsTopic>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/news.css">
+    <title>Google news</title>
+</head>
+<body>
+    <article id="mainTitle">Google news</article>
+    <section class="container">
+        <section class="headline-list">
+            <article>Topics</article>
+            <ul id="headlineList">
+                <!--Go through the entire list of data and display the post titles in the form of a link-->
+                @foreach (var topic in Model)
+                {
+                    <li class="headline-item" data-title="@topic.Title" data-description="@topic.Description" data-link="@topic.Link">
+                        @topic.Title
+                    </li>
+                }
+            </ul>
+        </section>
+        <section class="post-content">
+            <article>Post</article>
+            <article id="postTitle"></article>
+            <section id="postContent">
+                <!-- Post content will be dynamically inserted here -->
+            </section>
+        </section>
+        <div id="errorMessage" class="error-message"></div>
+    </section>
+
+    <script src="~/js/news.js"></script>
+</body>
+</html>
